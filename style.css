@@ -1,0 +1,266 @@
+body
+{
+	background:white;
+
+}
+
+h1
+{
+	text-align:right;
+	padding:40px;
+	font-weight:bold;
+
+}
+
+
+.login
+{
+	text-align:right;
+	background:white;
+
+}
+
+.home {
+  
+  list-style-type: none;
+  margin: 0;
+  padding:0;
+  overflow: hidden;
+  background-color: grey;
+  height:50px;
+ 
+
+}
+
+
+* {box-sizing: border-box}
+
+.home li a.active {
+  background-color:#4CAF50;
+  font-size:140%;
+  margin-top:-20px;
+  margin-left:-10px;
+}
+
+.navbar {
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color:  #333;
+  overflow: auto;
+  
+ 
+}
+
+.navbar a {
+	
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  font-family:arial;
+  font-weight:bold;
+  width: 10%;
+  text-align: center;
+  border-right:1px solid #bbb;
+}
+
+
+.navbar a:hover {
+	
+  background-color:#111;
+  
+
+
+}
+
+
+
+li a {
+	
+	
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+
+
+
+
+
+.home li a.active:hover
+{
+	background-color: #111;
+}
+
+ .button {
+ 
+  border: none;
+  color: white;
+  padding:2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  transition-duration: 0.4s;
+  cursor: pointer; 
+  font-weight:bold;
+  border-radius:8px;
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+  font-family:calibri;
+}
+
+
+ .button:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+@media screen and (max-width: 500px)
+ {
+ 	.home
+  {
+  	float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  .navbar a 
+  {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+    border-bottom:1px solid #bbb;
+
+  }
+}
+
+
+
+
+h2
+{
+	
+	padding:10px;
+	font-family:sans-serif;
+}
+
+.mySlides {
+	
+	position:absolute;
+	margin-left:auto;
+	margin-right:auto;
+
+
+}
+
+
+}
+
+p
+{
+	margin-left:20px;
+	color:black;
+	font-weight:bold;
+	font-family:assistant;
+	font-size:20px;
+}
+
+.mySlides1 {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
+div h2.sale {
+  width: 250px;
+  height: 50px;
+  font-weight:bold;
+  position: relative;
+  margin-left:auto;
+  margin-right:auto;
+  animation-name: sale;
+  animation-duration: 3s;
+  animation-iteration-count:30;
+}
+
+@keyframes sale {
+  0%   {color:red; left:-500px; top:0px;}
+  25%  {color:yellow; left:-100px; top:0px;}
+  50%  {color:blue; left:200px; top:0px;}
+  75%  {color:green; left:-100px; top:0px;}
+  100% {color:red; left:-500px; top:0px;}
+}
+
+.footer
+{	font-family:calibri;
+	text-align:center;
+	background-color:  #333;
+	color:white;
+	font-size:150%;
+
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+

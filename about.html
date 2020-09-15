@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+	<li style="float:left"><a class="active" href="index.html"><i class="fa fa-home"></i></a></li>
+
+<div class="about-section">
+  <h1><b>About E-Mart</b></h1>
+  <p>Electronic Mart or simply E-Mart, is an e-commerce website where people can buy/sell electronic gadgets.Our website is the one of the best source from where one can get a wide range of electronic items </p>
+  <p>Our aim is to provide the customers with best and high-quality products at nominal rates.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2><hr></hr>
+<table width="100%">
+	<tr>
+		<td><div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="ayush.jpg" alt="Ayush Tiwari" style="width:100%">
+      <div class="container">
+        <h2>Ayush Tiwari</h2>
+        <p class="title">Co-Founder @ E-Mart</p>
+         <p>Student at TCET</p> 
+          <p>ayush.tiwari@gmail.com</p>      
+        <p><a href="https://www.linkedin.com/in/ayush-tiwari-33b65b19a/"><button class="button">Contact</button></a></p>
+      </div>
+    </div>
+  </div>
+</div>
+</td>
+
+<td>
+  <div class="column">
+    <div class="card">
+      <img src="suraj.jpg" alt="Suraj Tiwari" style="width:100%">
+      <div class="container">
+        <h2>Suraj Tiwari</h2>
+        <p class="title">Co-Founder @ E-Mart</p>
+        <p>Student at TCET</p>
+        <p>suraj.tiwari99@gmail.com</p>
+        <p><a href="https://www.facebook.com/suraj.tiwar.54"><button class="button">Contact</button></a></p>
+      </div>
+    </div>
+  </div>
+  
+  </td>
+</tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>E-Mart</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href='https://fonts.googleapis.com/css?family=Assistant' rel='stylesheet'>
+	
+
+
+
+
+</head>
+<body>
+	<img align="left" src="e-martlogo.jpg" alt="E-Mart logo" width="15%" height="15%">
+	<h1 style="font-family:georgia">THE WORLD'S LARGEST ELECTRONIC STORE</h1>
+	<br>
+	
+	
+
+	<ul class="home">
+	<li style="float:left"><a class="active" href="index.html"><i class="fa fa-home"></i></a></li>
+	<li style="float:right"><a  href="signup.html"><button class="button">SIGN UP</button></a></li> |
+    <li style="float:right"><a  href="signin.html"><button class="button">SIGN IN</button></a></li>
+  </ul>
+
+	<div class="navbar">
+
+ <a href="smartphones.html">Smartphones</a>
+  <a href="tv.html">TV</a>
+  <a href="laptop.html">Laptop</a>
+  <a href="smartwatch.html">Smart Watch</a>
+  <a href="audio.html">Audio</a>
+  <a href="camera.html">Camera</a>
+  <a href="ac.html">AC</a>
+  <a href="refrigerator.html">Refrigerator</a>
+  <a href="airpurifier.html">Air Purifier</a>
+  <a href="accessories.html">Accessories</a>
+
+  
+   </div>
+
+
+   <h2 align="center">Latest Arrivals</h2>
+   <hr></hr>
+   <p style="font-family:assistant;font-size:20px; font-weight:bold; margin-left:90px">Smartphones & AC's</p>
+   <div class="w3-container" style="height:600px">
+  <img class="mySlides w3-animate-right" src="oneplus.jpg" style="width:90%; height:90%">
+  <img class="mySlides w3-animate-left" src="ac1.jpg" style="width:90%; height:90%">
+  <img class="mySlides w3-animate-right" src="redmi.jpg" style="width:90%;  height:90%">
+  <img class="mySlides w3-animate-left" src="ac2.jpg" style="width:90%; height:90%">
+  <img class="mySlides w3-animate-right" src="apple.jpg" style="width:90%; height:90%">
+   
+  <img class="mySlides w3-animate-right" src="samsung.jpg" style="width:90%; height:90%">
+  <img class="mySlides w3-animate-left" src="ac4.jpg" style="width:90%; height:90%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000);
+}
+</script>
+
+<hr><hr>
+
+<div class="w3-container">
+<h2 class="sale">&diams;BIGGEST&rarr;ELECTRONICS&larr;SALE&diams;</h2>
+
+<div class="w3-content w3-display-container" style="max-width:800px; max-height:400px">
+  <img class="mySlides1" src="sale1.jpg" style="width:100%">
+  <a href="ac.html"><img class="mySlides1" src="sale2.jpg" style="width:100%"></a>
+  <a href="refrigerator.html"><img class="mySlides1" src="sale3.jpg" style="width:100%"></a>
+  <a href="laptop.html"><img class="mySlides1" src="sale4.jpg" style="width:100%;height:400px"></a>
+  <a href="tv.html"><img class="mySlides1" src="sale5.jpg" style="width:100%; height:400px"></a>
+  <a href="audio.html"><img class="mySlides1" src="sale6.jpg" style="width:100%"></a>
+
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(6)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(7)"></span>
+  </div>
+</div>
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides1");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+ <br><br>
+ <hr></hr>
+<div class="footer">
+	<table align="center" width="100%">
+	<tr>
+		<td> | <button class="dropbtn"> ABOUT </button> | </td>
+		<td><div class="dropdown"> | <button class="dropbtn"> DEVELOPERS</button> |  <div class="dropdown-content">
+    <a href="resume-ayush.pdf"><br>Ayush Tiwari</a><br>
+    <a href="https://www.facebook.com/suraj.tiwar.54">Suraj Tiwari</a>
+    
+  </div>
+</div> 
+</td>
+  		<td> | <button class="dropbtn"> FEEDBACK </button> | </td>
+  		<td> | <button class="dropbtn"> CONNECT WITH US</button> | </td>
+	</tr>
+
+	<tr>
+		<td><a href="about.html">About E-Mart</a></td>
+		<td>Hover above</td>
+		<td><a href="feedback.html">Give Feedback</a></td>
+		<td><a href="https://www.facebook.com/ayush.tiwari.5855594" class="fa fa-facebook"></a>Facebook
+			<br>
+			<a href="https://twitter.com/yush_69" class="fa fa-twitter"></a>Twitter
+			<br>
+			<a href="https://www.linkedin.com/in/ayush-tiwari-33b65b19a/" class="fa fa-linkedin"></a>LinkedIn
+			</tr>
+</table>
+	<p>Copyright &copy 2020 | All Rights Reserved <br> <center>E-Mart Industries Pvt. Ltd.</center></p>
+	</div> 
+
+
+
+
+
+
+</body>
+</html>
