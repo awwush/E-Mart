@@ -6,6 +6,8 @@ Steps to open Project
 2. Open index.html file which contains the home page of the website.
 
 # HURRAY!! ALL SET TO EXPLORE WEBSITE
+
+- Here are some of the screenshots of the project :
 ![image](https://user-images.githubusercontent.com/65806215/114375724-97e05200-9ba2-11eb-9a50-b0b3b4d3b2fd.png)
 ![image](https://user-images.githubusercontent.com/65806215/114375767-a464aa80-9ba2-11eb-9aa3-50ab2cdb94e2.png)
 ![image](https://user-images.githubusercontent.com/65806215/114374852-b5f98280-9ba1-11eb-97bd-9a174e9eb15d.png)
